@@ -64,7 +64,7 @@ function updateCSS(){
     for(var i = pgPercent; i<numberOfCircles; i++){
         circles[i].classList.remove('active');
     }
-    var active = document.querySelectorAll('.active');
-    var width = ((active.length-1)/(numberOfCircles-1))*100;
+    var actives = document.querySelectorAll('.active');
+    var width = ((actives.length-1)/(numberOfCircles-1))*100;
     progress.style.width = width+"%";
 }
