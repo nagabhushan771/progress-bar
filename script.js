@@ -47,7 +47,7 @@ prev.addEventListener('click', () =>{
 
 function enableDisable(){
     if(pgPercent == 1)
-        prev.disabled = false;
+        prev.disabled = true;
     else if(pgPercent === numberOfCircles)
         next.disabled = true;
     else{
@@ -66,5 +66,6 @@ function updateCSS(){
     }
     var actives = document.querySelectorAll('.active');
     var width = ((actives.length-1)/(numberOfCircles-1))*100;
+    console.log(width);
     progress.style.width = width+"%";
 }
